@@ -9,7 +9,6 @@ export function getTasks() {
 }
 // Fonction pour sauvegarder toutes les tâches
 export function saveTasks(tasks) {
-    // localStorage ne peut stocker que du texte
     // JSON.stringify transforme le tableau en texte
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }

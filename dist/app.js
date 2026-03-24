@@ -1,4 +1,5 @@
 import { getTasks, saveTasks, deleteTask } from './storage.js';
+import { loadSuggestions } from './api.js';
 const input = document.querySelector("#todo-input");
 const button = document.querySelector("#btn");
 const list = document.querySelector("#todo-list");
@@ -30,3 +31,5 @@ function addTaskToDOM(text) {
         li.remove();
     });
 }
+// Charger les suggestions au démarrage
+loadSuggestions(list);
