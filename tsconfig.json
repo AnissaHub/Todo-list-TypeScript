@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Dossiers
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Module ES pour le navigateur
+    "module": "es2020",
+    "target": "es6",
+
+    // TypeScript strict
+    "strict": true,
+
+    // Sourcemaps utiles pour debug
+    "sourceMap": false,
+
+    // Déclarations (optionnel)
+    "declaration": false,
+
+    // Vérification des bibliothèques
+    "skipLibCheck": true
+  }
+}
